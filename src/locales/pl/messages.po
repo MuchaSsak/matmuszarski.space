@@ -72,7 +72,7 @@ msgstr "SPA dla zarządzania swoimi finansami poprzez notowanie budżetów oraz 
 msgid "analyzing nearby threats to the animals and getting rid of them"
 msgstr "analizowanie zagrożeń dla zwierząt i eliminowanie ich"
 
-#: src/components/CreditsDialogButton.tsx:42
+#: src/components/CreditsDialogButton.tsx:49
 msgid "are licensed under"
 msgstr "są pod licencją"
 
@@ -84,7 +84,7 @@ msgstr "uczestnictwo w spotkaniach z wolontariuszami"
 msgid "attending mentor on-site and onine meetings"
 msgstr "uczestnictwo w spotkaniach z mentorem, na miejscu jak i online"
 
-#: src/components/AudioSettingButton.tsx:47
+#: src/components/AudioSettingButton.tsx:60
 msgid "Audio settings"
 msgstr "Ustawienia dźwięku"
 
@@ -104,11 +104,13 @@ msgstr "Kurier rowerowy"
 msgid "But I've been to a bunch of"
 msgstr "Ale byłem też w"
 
-#: src/components/CreditsDialogButton.tsx:110
+#: src/components/CreditsDialogButton.tsx:136
+#: src/components/CreditsDialogButton.tsx:155
+#: src/components/CreditsDialogButton.tsx:174
 msgid "by"
 msgstr "od"
 
-#: src/components/ResetSettingsDialogButton.tsx:45
+#: src/components/ResetSettingsDialogButton.tsx:50
 msgid "Cancel"
 msgstr "Anuluj"
 
@@ -124,7 +126,7 @@ msgstr "Zobacz mój "
 msgid "check out my older portfolio 🚀"
 msgstr "sprawdź moje stare portfolio 🚀"
 
-#: src/components/CreditsDialogButton.tsx:132
+#: src/components/CreditsDialogButton.tsx:196
 msgid "Cheers to them!"
 msgstr "Brawa dla nich!"
 
@@ -152,7 +154,7 @@ msgstr "Complete Blender Megacourse: Beginner to Expert"
 msgid "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 msgstr "CompTIA A+ Core 1 (220-1101) Complete Course & Practice Exam"
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:117
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:116
 msgid "Contact"
 msgstr "Kontakt"
 
@@ -164,7 +166,7 @@ msgstr "Nie znaleziono wyników"
 msgid "creating spreadsheets"
 msgstr "tworzenie arkuszy kalkulacyjnych"
 
-#: src/components/CreditsDialogButton.tsx:28
+#: src/components/CreditsDialogButton.tsx:35
 msgid "Credits 💖"
 msgstr "Podziękowania 💖"
 
@@ -177,7 +179,7 @@ msgid "Delivering orders via the partnered mobile application — Glovo."
 msgstr "Dostarczanie zamówień przez partnerską aplikację mobilną — Glovo."
 
 #: src/components/AnimateDocumentTitle.tsx:28
-#: src/components/StartupScreen.tsx:145
+#: src/components/StartupScreen.tsx:146
 msgid "Deploying..."
 msgstr "Przygotowywanie..."
 
@@ -201,7 +203,7 @@ msgstr "Wykorzystywanie Infrastruktury do Działań z Młodzieżą w Daugirdišk
 msgid "Digital Youth Work Methods in Saraiķi, Latvia"
 msgstr "Metody Cyfrowej Pracy Młodzieży w Saraiķi, Latvia"
 
-#: src/components/ResetSettingsDialogButton.tsx:37
+#: src/components/ResetSettingsDialogButton.tsx:42
 msgid "Do you want to reset all settings?"
 msgstr "Czy chcesz zresetować wszystkie ustawienia?"
 
@@ -213,7 +215,7 @@ msgstr "Pobierz CV"
 msgid "e.g. Order for a website"
 msgstr "np. Zamówienie witryny internetowej"
 
-#: src/components/AudioSettingButton.tsx:56
+#: src/components/AudioSettingButton.tsx:69
 msgid "Enable sounds"
 msgstr "Włącz dźwięk"
 
@@ -234,9 +236,10 @@ msgstr "Dla bardziej responsywnej oraz lżejszej witryny, "
 msgid "foreign languages"
 msgstr "języki obce"
 
-#: src/components/CreditsDialogButton.tsx:61
-#: src/components/CreditsDialogButton.tsx:80
-#: src/components/CreditsDialogButton.tsx:99
+#: src/components/CreditsDialogButton.tsx:68
+#: src/components/CreditsDialogButton.tsx:87
+#: src/components/CreditsDialogButton.tsx:106
+#: src/components/CreditsDialogButton.tsx:125
 msgid "from"
 msgstr "z"
 
@@ -244,7 +247,11 @@ msgstr "z"
 msgid "front-end development"
 msgstr "programowanie front-end"
 
-#: src/components/GraphicsSettingButton.tsx:58
+#: src/components/StartupScreen.tsx:165
+msgid "Graphics"
+msgstr "Grafika"
+
+#: src/components/GraphicsSettingButton.tsx:66
 msgid "Graphics settings"
 msgstr "Ustawienia graficzne"
 
@@ -264,7 +271,7 @@ msgstr "Wysoka grafika"
 msgid "Home Budget"
 msgstr "Home Budget"
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:174
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:175
 msgid "I am writing to you because..."
 msgstr "Piszę do Ciebie, ponieważ..."
 
@@ -280,7 +287,9 @@ msgstr "Jeżeli wolisz zignorować to ostrzeżenie i kontynuować, "
 msgid "Instagram"
 msgstr "Instagram"
 
-#: src/components/CreditsDialogButton.tsx:118
+#: src/components/CreditsDialogButton.tsx:144
+#: src/components/CreditsDialogButton.tsx:163
+#: src/components/CreditsDialogButton.tsx:182
 msgid "is licensed under"
 msgstr "jest pod licencją"
 
@@ -300,9 +309,13 @@ msgstr "Doświadczenie zawodowe"
 msgid "keeping the volunteers' living space tidy"
 msgstr "utrzymywanie porządku w przestrzeni mieszkalnej wolontariuszy"
 
-#: src/components/LanguageSettingButton.tsx:27
+#: src/components/LanguageSettingButton.tsx:33
 msgid "language"
 msgstr "język"
+
+#: src/components/StartupScreen.tsx:159
+msgid "Language"
+msgstr "Język"
 
 #: src/canvases/space/sections/jobExperienceSection/components/JobExperienceItemDialog.tsx:116
 msgid "Learn more"
@@ -320,15 +333,15 @@ msgstr "LingoType"
 msgid "Low graphics"
 msgstr "Niska grafika"
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:171
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:172
 msgid "Message"
 msgstr "Wiadomość"
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:50
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:49
 msgid "Message must be at least 3 characters long."
 msgstr "Wiadomość musi zawierać conajmniej 3 znaki."
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:53
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:52
 msgid "Message must be at max 2048 characters long."
 msgstr "Wiadomość nie może przekraczać 2048 znaków."
 
@@ -336,7 +349,7 @@ msgstr "Wiadomość nie może przekraczać 2048 znaków."
 msgid "monitoring sea turtles nests"
 msgstr "monitorowanie gniazd żółwi morskich"
 
-#: src/components/CreditsDialogButton.tsx:53
+#: src/components/CreditsDialogButton.tsx:60
 msgid "Music by"
 msgstr "Muzyka od"
 
@@ -368,7 +381,7 @@ msgstr "LUB"
 msgid "other countries too!"
 msgstr "wielu innych krajach!"
 
-#: src/components/CreditsDialogButton.tsx:34
+#: src/components/CreditsDialogButton.tsx:41
 msgid "Planet textures by"
 msgstr "Tekstury planet od"
 
@@ -400,7 +413,7 @@ msgstr "ratowanie młodych żółwi"
 msgid "Rescuing threatened species of sea turtles and cleaning up the local environment alongside other foreign volunteers."
 msgstr "Ratowanie zagrożonych gatunków żółwi morskich i sprzątanie lokalnego środowiska wraz z innymi zagranicznymi wolontariuszami."
 
-#: src/components/ResetSettingsDialogButton.tsx:48
+#: src/components/ResetSettingsDialogButton.tsx:53
 msgid "Reset all"
 msgstr "Zresetuj wszystko"
 
@@ -416,7 +429,7 @@ msgstr "Szukaj"
 msgid "self-motivation"
 msgstr "automotywacja"
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:207
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:208
 msgid "Send"
 msgstr "Wyślij"
 
@@ -428,16 +441,21 @@ msgstr "Pokaż mniej"
 msgid "Show more, less relevant certificates"
 msgstr "Pokaż więcej, mniej odnośnych certyfikatów"
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:94
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:93
 msgid "Something went wrong with sending the mail!"
 msgstr "Coś poszło nie tak przy wysyłaniu maila!"
 
-#: src/components/CreditsDialogButton.tsx:72
-#: src/components/CreditsDialogButton.tsx:91
+#: src/components/CreditsDialogButton.tsx:79
+#: src/components/CreditsDialogButton.tsx:98
+#: src/components/CreditsDialogButton.tsx:117
 msgid "Sound Effect by"
 msgstr "Efekt Dźwiękowy od"
 
-#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:99
+#: src/components/StartupScreen.tsx:171
+msgid "Sounds"
+msgstr "Dźwięki"
+
+#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:94
 msgid "Source code 💻"
 msgstr "Kod źródłowy 💻"
 
@@ -450,7 +468,7 @@ msgstr "Speak Any Language in 10 Days - Conversational lvl [2024]"
 msgid "Starogard Gdański, Pomerania, Poland"
 msgstr "Starogard Gdański, Pomorskie, Polska"
 
-#: src/components/StartupScreen.tsx:160
+#: src/components/StartupScreen.tsx:182
 msgid "START"
 msgstr "START"
 
@@ -458,15 +476,15 @@ msgstr "START"
 msgid "Subject"
 msgstr "Tytuł"
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:42
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:41
 msgid "Subject must be at least 3 characters long."
 msgstr "Tytuł musi zawierać conajmniej 3 znaki."
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:45
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:44
 msgid "Subject must be at max 64 characters long."
 msgstr "Tytuł nie może przekraczać 64 znaków."
 
-#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:91
+#: src/canvases/space/sections/contactSection/components/ContactForm.tsx:90
 msgid "Successfully sent the mail!"
 msgstr "Pomyślnie wysłano mail!"
 
@@ -494,7 +512,7 @@ msgstr "The Ultimate React Course 2024: React, Next.js, Redux & More"
 #~ "Ta akcja nie może zostać odwrócona. To permanentnie usunie wszystkie\n"
 #~ "twoje dane przeglądarkowe oraz totalnie odświeży doświadczenie."
 
-#: src/components/ResetSettingsDialogButton.tsx:40
+#: src/components/ResetSettingsDialogButton.tsx:45
 msgid "This action cannot be undone. This will permanently delete all of your local storage data and totally refresh the experience."
 msgstr "Ta akcja nie może zostać odwrócona. To permanentnie usunie wszystkie twoje dane przeglądarkowe oraz totalnie odświeży doświadczenie."
 
@@ -515,7 +533,7 @@ msgstr "zarządzanie czasem"
 msgid "verifying packages integrity"
 msgstr "sprawdzanie integralności paczek"
 
-#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:118
+#: src/canvases/space/sections/projectsSection/components/ProjectsItemCard.tsx:113
 msgid "View it live 🚀"
 msgstr "Odwiedź projekt 🚀"
 
@@ -527,7 +545,7 @@ msgstr "Odwiedź LinkedIn"
 msgid "Visit old portfolio"
 msgstr "Odwiedź stare portfolio"
 
-#: src/components/AudioSettingButton.tsx:61
+#: src/components/AudioSettingButton.tsx:74
 msgid "Volume"
 msgstr "Głośność"
 

@@ -371,7 +371,45 @@ export const CERTIFICATES_LIST: CertificateData[] = [
     Icon: () => <span className="font-emoji">🛠️</span>,
     isRelevant: true,
   },
-
+  {
+    Title: () => t`UX Writing: Microcopy, User Research, Accessibility & More`,
+    authorName: "Proficient Courses",
+    websiteLink:
+      "https://www.udemy.com/course/ux-writing-the-art-of-user-centered-copy/",
+    StartedDate: () =>
+      i18n.date(new Date("09-03-2025"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    EndedDate: () =>
+      i18n.date(new Date("09-11-2025"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    Icon: () => <span className="font-emoji">✍️</span>,
+    isRelevant: false,
+  },
+  {
+    Title: () => t`Marketing Psychology and Consumer Behavior`,
+    authorName: "Proficient Courses",
+    websiteLink: "https://www.udemy.com/course/marketing-psychology/",
+    StartedDate: () =>
+      i18n.date(new Date("08-28-2025"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    EndedDate: () =>
+      i18n.date(new Date("09-03-2025"), {
+        day: "2-digit",
+        month: "2-digit",
+        year: "2-digit",
+      }),
+    Icon: () => <span className="font-emoji">🧠</span>,
+    isRelevant: false,
+  },
   {
     Title: () => t`Learn to DJ With Just Your Laptop: No DJ Equipment Needed`,
     authorName: "Jak Bradley",

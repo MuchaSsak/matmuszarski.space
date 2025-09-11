@@ -10,14 +10,21 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { useSettingsContext } from "@/contexts/SettingsContext";
 
 function CreditsDialogButton() {
   const { t } = useLingui();
+  const { hasStartedExperience } = useSettingsContext();
 
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="outline" size="icon" className="size-8">
+        <Button
+          tabIndex={!hasStartedExperience ? -1 : undefined}
+          variant="outline"
+          size="icon"
+          className="size-8"
+        >
           🏅
         </Button>
       </DialogTrigger>
@@ -133,6 +140,44 @@ function CreditsDialogButton() {
                   className="hover:underline focus-visible:underline font-bold"
                 >
                   ARCTIC WOLVES™
+                </a>{" "}
+                {t`is licensed under`}{" "}
+                <a
+                  className="hover:underline focus-visible:underline font-bold"
+                  href="http://creativecommons.org/licenses/by/4.0/"
+                  target="_blank"
+                >
+                  Creative Commons Attribution
+                </a>
+              </li>
+
+              <li>
+                "Modular Sci-fi Floor" {t`by`}{" "}
+                <a
+                  href="https://skfb.ly/6GuSY"
+                  target="_blank"
+                  className="hover:underline focus-visible:underline font-bold"
+                >
+                  decstar77
+                </a>{" "}
+                {t`is licensed under`}{" "}
+                <a
+                  className="hover:underline focus-visible:underline font-bold"
+                  href="http://creativecommons.org/licenses/by/4.0/"
+                  target="_blank"
+                >
+                  Creative Commons Attribution
+                </a>
+              </li>
+
+              <li>
+                "Type 30 Console" {t`by`}{" "}
+                <a
+                  href=" https://skfb.ly/oPEoM"
+                  target="_blank"
+                  className="hover:underline focus-visible:underline font-bold"
+                >
+                  themighty808
                 </a>{" "}
                 {t`is licensed under`}{" "}
                 <a

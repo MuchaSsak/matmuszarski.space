@@ -14,11 +14,17 @@ import { cn } from "@/lib/utils";
 type AudioSettingButtonProps = {
   buttonClassName?: string;
   buttonVariant?: AvailableButtonVariants;
+  buttonText?: string;
+  sideOffset?: number;
+  tabIndex?: number;
 };
 
 function AudioSettingButton({
   buttonClassName,
   buttonVariant = "secondary",
+  buttonText,
+  sideOffset,
+  tabIndex,
 }: AudioSettingButtonProps) {
   const { t } = useLingui();
   const { dispatch, isAudioEnabled, audioVolume } = useSettingsContext();
@@ -36,13 +42,20 @@ function AudioSettingButton({
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button size="icon" variant={buttonVariant} className={buttonClassName}>
+        <Button
+          size="icon"
+          tabIndex={tabIndex}
+          variant={buttonVariant}
+          className={buttonClassName}
+        >
           {(!isAudioEnabled || audioVolume === 0) && "🔇"}
           {isAudioEnabled && audioVolume > 0 && audioVolume < 0.5 && "🔉"}
           {isAudioEnabled && audioVolume >= 0.5 && "🔊"}
+          {buttonText && <span>{buttonText}</span>}
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="text-sm">
+
+      <PopoverContent sideOffset={sideOffset} className="text-sm">
         {/* Label */}
         <h6 className="text-muted-foreground text-xs">{t`Audio settings`}</h6>
 

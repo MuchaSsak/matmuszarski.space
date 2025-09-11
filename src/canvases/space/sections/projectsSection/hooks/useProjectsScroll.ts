@@ -7,7 +7,7 @@ import {
 } from "@/canvases/space/components/CameraControls";
 import { useScrollContext } from "@/contexts/ScrollContext";
 
-const scrollIncrementation = 0.005;
+const scrollIncrementation = 0.01;
 const minScrollProgress = -1;
 const maxScrollProgress = 1;
 

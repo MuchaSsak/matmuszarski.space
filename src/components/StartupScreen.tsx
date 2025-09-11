@@ -28,6 +28,7 @@ function StartupScreen() {
     volume: isAudioEnabled ? audioVolume : 0,
   });
   const startupScreenContainerRef = useRef<HTMLDivElement>(null);
+  const settingsButtonsContainerRef = useRef<HTMLDivElement>(null);
   const loadingTextContainerRef = useRef<HTMLHeadingElement>(null);
   const backgroundImageRef = useRef<HTMLImageElement>(null);
   const leftOverlayPanelRef = useRef<HTMLImageElement>(null);
@@ -69,6 +70,13 @@ function StartupScreen() {
         ease: "sine.inOut",
       });
 
+    if (hasLoadedBackgroundImage)
+      gsap.to(settingsButtonsContainerRef.current, {
+        opacity: 1,
+        duration: 4,
+        delay: 1.5,
+      });
+
     /**
      * On start experience animations
      */
@@ -78,7 +86,7 @@ function StartupScreen() {
     gsap.to(startupScreenContainerRef.current, {
       display: "none",
       duration: 0.01,
-      delay: 2.5,
+      delay: 2.8,
     });
 
     // Left panel slide in
@@ -93,6 +101,7 @@ function StartupScreen() {
       .to(leftOverlayPanelRef.current, {
         x: "-100%",
         ease: "sine.inOut",
+        boxShadow: "0 0 0 transparent",
         delay: 1,
         duration: 2,
       })
@@ -110,6 +119,7 @@ function StartupScreen() {
       .to(rightOverlayPanelRef.current, {
         x: "100%",
         ease: "sine.inOut",
+        boxShadow: "0 0 0 transparent",
         delay: 1,
         duration: 2,
       })
@@ -137,12 +147,42 @@ function StartupScreen() {
       <div ref={loadingTextContainerRef}>
         <h1
           className={cn(
-            "text-2xl transition-opacity duration-500 ease-in-out select-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50",
+            "text-2xl transition-opacity duration-500 ease-in-out select-none pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-50",
             hasLoadedBackgroundImage ? "opacity-0!" : "opacity-100!"
           )}
         >
           {t`Deploying...`}
         </h1>
+      </div>
+
+      <div className="opacity-0" ref={settingsButtonsContainerRef}>
+        {/* Settings buttons */}
+        <LanguageSettingButton
+          sideOffset={32}
+          buttonText={t`Language`}
+          buttonVariant="ghost"
+          buttonClassName="bg-transparent! w-[14%] h-[4.5%] left-[24.25%] top-[78%] fixed [transform:perspective(35vw)_rotateY(-10deg)_rotateX(20deg)_skewX(-5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-[1.5vw] focus-visible:[box-shadow:0_0_5vw_var(--foreground)] hover:[box-shadow:0_0_5vw_var(--foreground)]"
+        />
+        <GraphicsSettingButton
+          sideOffset={32}
+          buttonText={t`Graphics`}
+          buttonVariant="ghost"
+          buttonClassName="bg-transparent! w-[14%] h-[4.5%] top-[78%] left-1/2 -translate-x-1/2 fixed [transform:perspective(35vw)_rotateX(20deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-[1.5vw] focus-visible:[box-shadow:0_0_5vw_var(--foreground)] hover:[box-shadow:0_0_5vw_var(--foreground)]"
+        />
+        <AudioSettingButton
+          sideOffset={32}
+          buttonText={t`Sounds`}
+          buttonVariant="ghost"
+          buttonClassName="bg-transparent! w-[14%] h-[4.5%] top-[78%] right-[25%] fixed [transform:perspective(35vw)_rotateY(10deg)_rotateX(20deg)_skewX(5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-[1.5vw] focus-visible:[box-shadow:0_0_5vw_var(--foreground)] hover:[box-shadow:0_0_5vw_var(--foreground)]"
+        />
+
+        {/* Start button */}
+        <Button
+          onClick={handleStartExperience}
+          disabled={hasStartedExperience}
+          variant="ghost"
+          className="text-[5vw] left-1/2 -translate-x-1/2 top-[53%] fixed bg-transparent! focus-visible:[box-shadow:0_0_10rem_var(--foreground)] hover:[box-shadow:0_0_10rem_var(--foreground)] text-[#084000] focus-visible:text-[#117D00] focus-visible:border-2 focus-visible:border-[#084000] hover:text-[#117D00] font-black tracking-[0.15em] h-[15%] w-[38%] rounded-full [transform:perspective(35vw)_rotateX(20deg)]"
+        >{t`START`}</Button>
       </div>
 
       {/* Background image */}
@@ -155,26 +195,6 @@ function StartupScreen() {
         alt="The control panel of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
       />
 
-      <div
-        className={cn(
-          "flex flex-col-reverse items-center justify-center gap-3 transition-opacity duration-[4000ms] [transition-delay:1500ms] ease-in-out",
-          hasLoadedBackgroundImage ? "opacity-100!" : "opacity-0!"
-        )}
-      >
-        {/* Start button */}
-        <Button
-          onClick={handleStartExperience}
-          disabled={hasStartedExperience}
-        >{t`START`}</Button>
-
-        {/* Settings buttons */}
-        <div className="gap-2 flex">
-          <LanguageSettingButton />
-          <GraphicsSettingButton />
-          <AudioSettingButton />
-        </div>
-      </div>
-
       {/* Start animation side panels */}
       {createPortal(
         <>
@@ -182,13 +202,13 @@ function StartupScreen() {
             src="/assets/pictures/startup_screen_door.jpg"
             alt="The door side panels of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
             ref={leftOverlayPanelRef}
-            className="h-screen w-[50vw] absolute left-0 -translate-x-full top-0 z-50"
+            className="h-screen w-[50vw] -scale-x-100 absolute [box-shadow:0_0_1rem_rgba(0,0,0,0.75)] object-cover left-0 -translate-x-full top-0 z-50"
           />
           <img
             src="/assets/pictures/startup_screen_door.jpg"
             alt="The door side panels of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
             ref={rightOverlayPanelRef}
-            className="h-screen w-[50vw] absolute right-0 translate-x-full top-0 z-50"
+            className="h-screen w-[50vw] absolute object-cover [box-shadow:0_0_1rem_rgba(0,0,0,0.75)] right-0 translate-x-full top-0 z-50"
           />
         </>,
         document.body

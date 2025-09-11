@@ -54,6 +54,9 @@ export function ScrollContextProvider({
     function handleScroll(e: WheelEvent) {
       if (isScrollingPaused) return;
 
+      const isZooming = e.ctrlKey;
+      if (isZooming) return;
+
       const isScrollingDown = e.deltaY > 0;
 
       // You have no idea how much trouble and time this little wheel event firing too fast for state to update cost me. Debouncing is not enough. Trust me. Flush sync is the key.

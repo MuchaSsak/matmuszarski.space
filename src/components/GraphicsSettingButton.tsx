@@ -21,11 +21,17 @@ import { cn } from "@/lib/utils";
 type GraphicsSettingButtonProps = {
   buttonClassName?: string;
   buttonVariant?: AvailableButtonVariants;
+  buttonText?: string;
+  sideOffset?: number;
+  tabIndex?: number;
 };
 
 function GraphicsSettingButton({
   buttonClassName,
   buttonVariant = "secondary",
+  buttonText,
+  sideOffset,
+  tabIndex,
 }: GraphicsSettingButtonProps) {
   const { t } = useLingui();
   const { graphicsPresetValue, graphicsPresetIcon, dispatch } =
@@ -43,6 +49,7 @@ function GraphicsSettingButton({
     <Select onValueChange={handleSetGraphicsSettings}>
       <SelectTrigger
         iconClassName="hidden"
+        tabIndex={tabIndex}
         className={cn(
           buttonVariants({
             variant: buttonVariant,
@@ -52,8 +59,9 @@ function GraphicsSettingButton({
         )}
       >
         {graphicsPresetIcon}
+        {buttonText && <span>{buttonText}</span>}
       </SelectTrigger>
-      <SelectContent align="center">
+      <SelectContent sideOffset={sideOffset} align="center">
         <SelectGroup>
           <SelectLabel>{t`Graphics settings`}</SelectLabel>
 

@@ -16,7 +16,7 @@ import { useSettingsContext } from "@/contexts/SettingsContext";
 
 function ResetSettingsDialogButton() {
   const { t } = useLingui();
-  const { dispatch } = useSettingsContext();
+  const { dispatch, hasStartedExperience } = useSettingsContext();
 
   function handleResetSettings() {
     dispatch({ type: "state/reset" });
@@ -26,7 +26,12 @@ function ResetSettingsDialogButton() {
   return (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-        <Button variant="outline" size="icon" className="size-8">
+        <Button
+          tabIndex={!hasStartedExperience ? -1 : undefined}
+          variant="outline"
+          size="icon"
+          className="size-8"
+        >
           💾
         </Button>
       </AlertDialogTrigger>

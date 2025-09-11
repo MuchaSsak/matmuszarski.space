@@ -4,6 +4,7 @@ import GraphicsSettingButton from "@/components/GraphicsSettingButton";
 import LanguageSettingButton from "@/components/LanguageSettingButton";
 import ResetSettingsDialogButton from "@/components/ResetSettingsDialogButton";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { useSettingsContext } from "@/contexts/SettingsContext";
 import {
   CONTACT_EMAIL,
   GITHUB_AVATAR_LINK,
@@ -11,11 +12,14 @@ import {
 } from "@/lib/constants";
 
 function TopBar() {
+  const { hasStartedExperience } = useSettingsContext();
+
   return (
     <nav className="fixed top-0 left-0 w-screen py-2 px-8 z-50 justify-between flex items-center">
       <div className="flex items-center gap-2.5">
         {/* GitHub avatar link */}
         <a
+          tabIndex={!hasStartedExperience ? -1 : undefined}
           target="_blank"
           className="opacity-75 hover:opacity-100 focus-visible:opacity-100 hover:scale-110 focus-visible:scale-110 transition-[opacity,scale]"
           href={GITHUB_LINK}
@@ -28,6 +32,7 @@ function TopBar() {
 
         {/* Contact email link */}
         <a
+          tabIndex={!hasStartedExperience ? -1 : undefined}
           className="text-muted-foreground text-sm hover:text-foreground transition-colors focus-visible:text-foreground hover:underline focus-visible:underline"
           href={`mailto:${CONTACT_EMAIL}`}
           target="_blank"
@@ -41,14 +46,17 @@ function TopBar() {
         <LanguageSettingButton
           buttonClassName="size-8 p-2 text-xs"
           buttonVariant="outline"
+          tabIndex={!hasStartedExperience ? -1 : undefined}
         />
         <GraphicsSettingButton
           buttonClassName="size-8 p-2 focus:outline-red-500! text-xs"
           buttonVariant="outline"
+          tabIndex={!hasStartedExperience ? -1 : undefined}
         />
         <AudioSettingButton
           buttonClassName="size-8 p-2 text-xs"
           buttonVariant="outline"
+          tabIndex={!hasStartedExperience ? -1 : undefined}
         />
         <CreditsDialogButton />
         <ResetSettingsDialogButton />

@@ -63,6 +63,7 @@ function SpaceCanvas() {
         position: [0.51, 0.6, -19.85],
         rotation: [0.0, 2.78, 0.0],
       }}
+      className="h-screen! w-screen!"
     >
       {/* Camera controls */}
       <CameraControls />
