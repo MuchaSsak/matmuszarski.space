@@ -66,7 +66,7 @@ export function ScrollContextProvider({
         setScrollProgress((prev) => {
           setPreviousScrollProgress(prev);
 
-          // Readd wheel event listener when it would otherwise be used up due to the option { once: true }
+          // Read wheel event listener when it would otherwise be used up due to the option { once: true }
           if (
             prev === AVAILABLE_SCROLLING_SECTIONS.length - 1 &&
             isScrollingDown
