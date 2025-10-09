@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/MuchaSsak/muszarski.space/compare/v1.1.1...v1.1.2) (2025-10-09)
+
+
+### Bug Fixes
+
+* disable lens flare occlusion ([8d84993](https://github.com/MuchaSsak/muszarski.space/commit/8d8499322c2510b50609dd19e16079d10e22a72b))
+
+
+
 ## [1.1.1](https://github.com/MuchaSsak/muszarski.space/compare/v1.1.0...v1.1.1) (2025-09-28)
 
 
