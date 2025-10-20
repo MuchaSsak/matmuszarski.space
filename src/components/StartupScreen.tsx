@@ -141,7 +141,7 @@ function StartupScreen() {
   return (
     <div
       ref={startupScreenContainerRef}
-      className="w-screen h-screen left-0 top-0 z-50 absolute flex justify-center items-center"
+      className="w-screen h-screen left-0 top-0 z-50 absolute flex justify-center bg-black items-center"
     >
       {/* Loading text */}
       <div ref={loadingTextContainerRef}>
@@ -161,19 +161,19 @@ function StartupScreen() {
           sideOffset={32}
           buttonText={t`Language`}
           buttonVariant="ghost"
-          buttonClassName="bg-transparent! w-[14%] h-[4.5%] left-[24.25%] top-[78%] fixed [transform:perspective(35vw)_rotateY(-10deg)_rotateX(20deg)_skewX(-5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-[1.5vw] focus-visible:[box-shadow:0_0_5vw_var(--foreground)] hover:[box-shadow:0_0_5vw_var(--foreground)]"
+          buttonClassName="bg-transparent! w-[11.5rem] px-3 h-10 left-[24.25%] top-[calc(50%_+_14.8rem)] left-[calc(50%_-_15.25rem)] -translate-x-1/2 fixed [transform:perspective(30rem)_rotateY(-10deg)_rotateX(20deg)_skewX(-5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)]"
         />
         <GraphicsSettingButton
           sideOffset={32}
           buttonText={t`Graphics`}
           buttonVariant="ghost"
-          buttonClassName="bg-transparent! w-[14%] h-[4.5%] top-[78%] left-1/2 -translate-x-1/2 fixed [transform:perspective(35vw)_rotateX(20deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-[1.5vw] focus-visible:[box-shadow:0_0_5vw_var(--foreground)] hover:[box-shadow:0_0_5vw_var(--foreground)]"
+          buttonClassName="bg-transparent! w-[11.5rem] px-3 h-10 top-[calc(50%_+_14.8rem)] left-1/2 -translate-x-1/2 fixed [transform:perspective(30rem)_rotateX(20deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)]"
         />
         <AudioSettingButton
           sideOffset={32}
           buttonText={t`Sounds`}
           buttonVariant="ghost"
-          buttonClassName="bg-transparent! w-[14%] h-[4.5%] top-[78%] right-[25%] fixed [transform:perspective(35vw)_rotateY(10deg)_rotateX(20deg)_skewX(5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-[1.5vw] focus-visible:[box-shadow:0_0_5vw_var(--foreground)] hover:[box-shadow:0_0_5vw_var(--foreground)]"
+          buttonClassName="bg-transparent! w-[11.5rem] px-3 h-10 top-[calc(50%_+_14.8rem)] right-[calc(50%_-_14.75rem)] translate-x-1/2 fixed [transform:perspective(30rem)_rotateY(10deg)_rotateX(20deg)_skewX(5deg)] text-[#400000] hover:text-[#7D0000] focus-visible:text-[#7D0000] focus-visible:border-2 focus-visible:border-[#7D0000] text-2xl focus-visible:[box-shadow:0_0_3rem_var(--foreground)] hover:[box-shadow:0_0_3rem_var(--foreground)]"
         />
 
         {/* Start button */}
@@ -181,7 +181,7 @@ function StartupScreen() {
           onClick={handleStartExperience}
           disabled={hasStartedExperience}
           variant="ghost"
-          className="text-[5vw] left-1/2 -translate-x-1/2 top-[53%] fixed bg-transparent! focus-visible:[box-shadow:0_0_10rem_var(--foreground)] hover:[box-shadow:0_0_10rem_var(--foreground)] text-[#084000] focus-visible:text-[#117D00] focus-visible:border-2 focus-visible:border-[#084000] hover:text-[#117D00] font-black tracking-[0.15em] h-[15%] w-[38%] rounded-full [transform:perspective(35vw)_rotateX(20deg)]"
+          className="text-7xl h-32 w-[30rem] left-1/2 -translate-x-1/2 top-[calc(50%_+_1.6rem)] fixed bg-transparent! focus-visible:[box-shadow:0_0_10rem_var(--foreground)] hover:[box-shadow:0_0_10rem_var(--foreground)] text-[#084000] focus-visible:text-[#117D00] focus-visible:border-2 focus-visible:border-[#084000] hover:text-[#117D00] font-black tracking-[0.15em] rounded-full [transform:perspective(30rem)_rotateX(20deg)]"
         >{t`START`}</Button>
       </div>
 
@@ -189,7 +189,7 @@ function StartupScreen() {
       <img
         ref={backgroundImageRef}
         className={cn(
-          "w-screen h-screen object-cover absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 brightness-0"
+          "w-[93.75rem] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 brightness-0"
         )}
         src="/assets/pictures/startup_screen_background.jpg"
         alt="The control panel of your spaceship which will take you to a tour of Mateusz Muszarski's portfolio"
