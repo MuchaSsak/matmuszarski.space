@@ -1,3 +1,12 @@
+## [1.1.6](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.5...v1.1.6) (2026-03-17)
+
+
+### Bug Fixes
+
+* update job experience ([fb04628](https://github.com/MuchaSsak/matmuszarski.space/commit/fb04628035e1912546af0aa3a60e393f749fea94))
+
+
+
 ## [1.1.5](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.4...v1.1.5) (2026-03-17)
 
 
@@ -31,21 +40,6 @@
 ### Bug Fixes
 
 * disable lens flare occlusion ([8d84993](https://github.com/MuchaSsak/matmuszarski.space/commit/8d8499322c2510b50609dd19e16079d10e22a72b))
-
-
-
-## [1.1.1](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.0...v1.1.1) (2025-09-28)
-
-
-### Bug Fixes
-
-* prevent scrolling on startup screen ([46d4b2a](https://github.com/MuchaSsak/matmuszarski.space/commit/46d4b2a9e951c261dc033da20993dcee2f8c02b0))
-* readd event listener on scrolling up in first section ([17129e4](https://github.com/MuchaSsak/matmuszarski.space/commit/17129e41384300b815a04b03a772775bf97b174e))
-
-
-### Reverts
-
-* Revert "style: fix comment typo" ([40bf97c](https://github.com/MuchaSsak/matmuszarski.space/commit/40bf97c6034837f40e3a205c6634356c1320a839))
 
 
 
