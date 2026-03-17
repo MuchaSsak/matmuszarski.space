@@ -1,3 +1,12 @@
+## [1.1.5](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.4...v1.1.5) (2026-03-17)
+
+
+### Bug Fixes
+
+* update projects ([d1fd9c4](https://github.com/MuchaSsak/matmuszarski.space/commit/d1fd9c47f57d1d30a1550e3d064b09a51cb29a27))
+
+
+
 ## [1.1.4](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.3...v1.1.4) (2026-03-17)
 
 
@@ -37,15 +46,6 @@
 ### Reverts
 
 * Revert "style: fix comment typo" ([40bf97c](https://github.com/MuchaSsak/matmuszarski.space/commit/40bf97c6034837f40e3a205c6634356c1320a839))
-
-
-
-# [1.1.0](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.0.0...v1.1.0) (2025-09-11)
-
-
-### Features
-
-* add new startup screen images ([2825074](https://github.com/MuchaSsak/matmuszarski.space/commit/2825074b4e11fa84a308c66ae2c2f0c45a0c878e))
 
 
 
