@@ -27,8 +27,8 @@ export const GITHUB_AVATAR_LINK =
 export const INSTAGRAM_LINK = "https://www.instagram.com/mat.muszarski/";
 export const LINKEDIN_LINK =
   "https://www.linkedin.com/in/mateusz-muszarski-b1168a28a/";
-export const WEBSITE_LINK = "https://muszarski.space";
-export const OLD_PORTFOLIO_WEBSITE_LINK = "https://2d.muszarski.space";
+export const WEBSITE_LINK = "https://matmuszarski.space";
+export const OLD_PORTFOLIO_WEBSITE_LINK = "https://2d.matmuszarski.space";
 
 // Scrolling
 export const AVAILABLE_SCROLLING_SECTIONS = [
