@@ -1,3 +1,12 @@
+## [1.1.4](https://github.com/MuchaSsak/muszarski.space/compare/v1.1.3...v1.1.4) (2026-03-17)
+
+
+### Bug Fixes
+
+* update domain name ([57128f3](https://github.com/MuchaSsak/muszarski.space/commit/57128f3c6dcb27b48d7b3cd7a1aceff8e060fd72))
+
+
+
 ## [1.1.3](https://github.com/MuchaSsak/muszarski.space/compare/v1.1.2...v1.1.3) (2025-10-20)
 
 
@@ -37,20 +46,6 @@
 ### Features
 
 * add new startup screen images ([2825074](https://github.com/MuchaSsak/muszarski.space/commit/2825074b4e11fa84a308c66ae2c2f0c45a0c878e))
-
-
-
-# [1.0.0](https://github.com/MuchaSsak/muszarski.space/compare/c6bced0dc9a9a9133bac6601d14bbd8e1d4d4d17...v1.0.0) (2025-09-02)
-
-
-### Features
-
-* initial commit ([c6bced0](https://github.com/MuchaSsak/muszarski.space/commit/c6bced0dc9a9a9133bac6601d14bbd8e1d4d4d17))
-
-
-### BREAKING CHANGES
-
-* initial commit
 
 
 
