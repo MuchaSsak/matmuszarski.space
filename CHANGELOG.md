@@ -1,3 +1,12 @@
+## [1.1.7](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.6...v1.1.7) (2026-03-26)
+
+
+### Bug Fixes
+
+* work experience ruigrok title ([2b51258](https://github.com/MuchaSsak/matmuszarski.space/commit/2b51258e4046045f0eff0310022cef49000c6330))
+
+
+
 ## [1.1.6](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.5...v1.1.6) (2026-03-17)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * align startup screen buttons properly ([d4ed4d6](https://github.com/MuchaSsak/matmuszarski.space/commit/d4ed4d63c290ec23a3eca7040e7df7f5d866bb62))
-
-
-
-## [1.1.2](https://github.com/MuchaSsak/matmuszarski.space/compare/v1.1.1...v1.1.2) (2025-10-09)
-
-
-### Bug Fixes
-
-* disable lens flare occlusion ([8d84993](https://github.com/MuchaSsak/matmuszarski.space/commit/8d8499322c2510b50609dd19e16079d10e22a72b))
 
 
 
